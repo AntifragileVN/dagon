@@ -1,0 +1,23 @@
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu__list {
+  list-style: none;
+  display: flex;
+}
