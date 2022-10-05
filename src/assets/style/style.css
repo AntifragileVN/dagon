@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+
 .container {
   max-width: 1220px;
   margin: 0 auto;
@@ -5,6 +11,16 @@
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0 auto;
+}
+
+body {
+  /* background-color: #000; */
+  color: black;
 }
 
 .header__inner {
@@ -20,4 +36,83 @@ a {
 .menu__list {
   list-style: none;
   display: flex;
+}
+
+.footer__inner {
+  padding: 50px 100px 10px;
+}
+
+.footer__background {
+  background: url(../../components/images/Concept-cryptocurrency-bitcoin-on-transparent-background-PNG.png);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.blur {
+  background: rgba(244, 187, 5, 0.836);
+  backdrop-filter: blur(3px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  z-index: 10;
+}
+
+.footer_logo {
+  content: " ";
+  height: 50px;
+}
+
+.footer__info-text {
+  max-width: 300px;
+  font-size: 12px;
+  margin: 0;
+}
+
+.footer__lists {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+}
+
+.footer__list {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.footer__list-item {
+  margin-bottom: 4px;
+}
+
+.footer__list-link {
+  font-size: 12px;
+}
+
+.footer__list-title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+
+hr {
+  height: 1.5px;
+  background: #000;
+  margin: 0 auto;
+  border: none;
+}
+
+.footer__copiright {
+  font-size: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
 }
