@@ -14,6 +14,7 @@ ul,
 p {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 :root {
@@ -38,7 +39,7 @@ p {
 }
 
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #2a2a2a;
 }
 
@@ -224,6 +225,57 @@ body {
 .volume__categori {
   font-size: 11px;
   text-align: center;
+}
+
+/* **************************       question          ******************************** */
+.question__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--white-color);
+  padding: 50px 0;
+}
+
+.question__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+.question__text {
+  font-size: 15px;
+  font-weight: 500;
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.question__list {
+  display: flex;
+  gap: 100px;
+}
+
+.question__item {
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.question__link {
+  display: flex;
+  border-radius: 40%;
+  padding: 30px;
+  background: #575757;
+  transition: 0.5s;
+  margin-bottom: 20px;
+}
+
+.question__link:hover {
+  background: var(--white-color);
 }
 
 /* **************************       Footer            ******************************** */
