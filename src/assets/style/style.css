@@ -172,12 +172,113 @@ body {
   color: white;
   background-color: var(--bg-color);
 }
+
+.hero {
+  background-image: url(../../components/images/hero__bg.jpg);
+  background-repeat: none;
+  padding: 200px 0px;
+  background-position: center center;
+}
+
+.hero__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+}
+
+.hero__info {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 .hero__title {
-  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 35px;
+  text-align: left;
+  margin-bottom: 50px;
 }
+
 .hero__description {
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  text-align: left;
+  margin: 0px 0px 30px 0px;
+  max-width: 320px;
+}
+
+.hero__form {
+  background: linear-gradient(
+    to top left,
+    rgb(240, 236, 236),
+    rgb(209, 209, 209)
+  );
+  border: 1px solid #747474;
+  padding: 30px 20px;
+  color: rgb(218, 216, 216);
+  display: flex;
+  flex-direction: column;
+  color: var(--bg-color);
+  max-width: 600px;
+}
+
+.hero__form-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
   margin-bottom: 20px;
 }
+
+.hero__floating-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.hero__form-label {
+  font-weight: 500;
+  color: #838181;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 10%;
+  transition: 1ms;
+  transition: color 250ms ease-in-out, top 250ms ease-in-out;
+}
+
+.hero__form-input {
+  border: 1px solid #cccbcb;
+  width: 100%;
+  padding: 14px 20px 14px 15px;
+}
+
+.hero__form-input:focus {
+  outline: none;
+  box-shadow: 0px 2px 0px var(--main-color);
+}
+
+.hero__form-input:focus + .hero__form-label,
+.hero__form-input:valid + .hero__form-label {
+  color: var(--main-color);
+  top: -17%;
+}
+
+.hero__form-btn {
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: var(--bg-color);
+  background: var(--main-color);
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 7px 0;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
 .hero__button {
   display: inline-block;
   width: 200px;
