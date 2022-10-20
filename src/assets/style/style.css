@@ -215,6 +215,7 @@ body {
   /* background: linear-gradient(to top left, rgb(170, 170, 170), rgb(85, 85, 85)); */
   background: rgb(242, 244, 248);
   border: 1px solid #747474;
+  border-radius: 5px;
   padding: 30px 20px;
   color: rgb(218, 216, 216);
   display: flex;
