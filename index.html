@@ -8,113 +8,167 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Dagon</title>
   </head>
   <body>
-   <header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <nav class="nav">
-          <a href="" class="logo link">Dagon</a>
-          <ul class="nav__list list">
-            <li class="nav__item">
-              <a class="nav__link link" href="#">Home</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="#">Company</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="#">Features</a>
-            </li>
-          </ul>
-        </nav>
-        <button type="button" class="header__button" data-modal-open>Sign in</button>
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <button class="button-close" type="button" data-modal-close>
-              <svg width="11px" height="11px" class="close-icon">
-                <use href="./img/icons.svg#close"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-  </header>
-  <main>
-    <section class="hero section">
+    <header class="header">
       <div class="container">
-        <div class="hero__inner">
-          <div class="hero__info">
-            <h1 class="hero__title">The best way of buying and solding of cryptocurrency</h1>
-          <p class="hero__description">Sign in now to buy cryptocurrency and trade on the most popular currency pairs </p>
-          <button class="hero__button">Book now</button>
-          </div>
-          <form class="hero__form">
-            <h3 class="hero__form-title">Log in</h3>
-            <div class="hero__floating-group">
-              <input class="hero__form-input" type="email" name="email" id="email" required/>
-              <label class="hero__form-label" for="email">Email</label>
+        <div class="header__inner">
+          <nav class="nav">
+            <a href="" class="logo link">Dagon</a>
+            <ul class="nav__list list">
+              <li class="nav__item">
+                <a class="nav__link link" href="#">Home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="#">Company</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="#">Features</a>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="header__button" data-modal-open>
+            Sign in
+          </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="button-close" type="button" data-modal-close>
+                <svg width="11px" height="11px" class="close-icon">
+                  <use href="./img/icons.svg#close"></use>
+                </svg>
+              </button>
             </div>
-             <div class="hero__floating-group">
-              <input class="hero__form-input" type="password" name="password" id="password" required/>
-               <label class="hero__form-label" for="password">Password</label>
-              </div>
-           <button class="hero__form-btn"> Log in</button>
-          </form>
+          </div>
         </div>
       </div>
-    </section>
-    <section class="about section">
-      <div class="container">
-        <h2 class="about__title">About us</h2>
-        <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quos cum officia in
-          nostrum rem ratione
-          commodi ea officiis illo?</p>
-      </div>
-    </section>
-    <section class="volume">
-      <div class="container">
-       <ul class="volume__list">
-        <li class="volume__item">
-          <span class="volume__number">$6 479 291</span>
-          <p class="volume__categori">Weekle trading volume</p>
-        </li>
-        <li class="volume__item">
-           <span class="volume__number">$ 812 993</span>
-          <p class="volume__categori">Day trading volume</p>
-        </li>
-        <li class="volume__item">
-           <span class="volume__number">40 815</span>
-          <p class="volume__categori">Active traders</p>
-        </li>
-       </ul>
-      </div>
-    </section>
-    <section class="question">
-      <div class="container">
-        <div class="question__inner">
-          <h2 class="question__title">Do you have some questions ?</h2>
-          <p class="question__text"> We'll answer you within 10 minutes. We can communicate in diffetent social networks. Сhoose which one is convenient for you. Communication only with real people  </p>
-          <ul class="question__list">
-            <li class="question__item">
-              <a href="#" class="question__link"><img src="src/components/images/question__instagram.svg" alt="instagram-logo"></a>
-              <p class="question__link-text">Instagram</p>
+    </header>
+    <main>
+      <section class="hero section">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__info">
+              <h1 class="hero__title">
+                The best way of buying and solding of cryptocurrency
+              </h1>
+              <p class="hero__description">
+                Sign in now to buy cryptocurrency and trade on the most popular
+                currency pairs
+              </p>
+              <button class="hero__button">Book now</button>
+            </div>
+            <form class="hero__form">
+              <h3 class="hero__form-title">Log in</h3>
+              <div class="hero__floating-group">
+                <img
+                  class="hero__form-icon"
+                  src="src/components/images/form__email-icon.svg"
+                  alt="email icon"
+                />
+                <input
+                  class="hero__form-input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                />
+                <label class="hero__form-label" for="email">Email</label>
+              </div>
+              <div class="hero__floating-group">
+                <img
+                  class="hero__form-icon"
+                  src="src/components/images/form__password-icon.svg"
+                  alt="password icon"
+                />
+                <input
+                  class="hero__form-input"
+                  type="password"
+                  name="password"
+                  id="password"
+                  required
+                />
+                <label class="hero__form-label" for="password">Password</label>
+              </div>
+              <button class="hero__form-btn">Log in</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="about section">
+        <div class="container">
+          <h2 class="about__title">About us</h2>
+          <p class="about__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            quos cum officia in nostrum rem ratione commodi ea officiis illo?
+          </p>
+        </div>
+      </section>
+      <section class="volume">
+        <div class="container">
+          <ul class="volume__list">
+            <li class="volume__item">
+              <span class="volume__number">$6 479 291</span>
+              <p class="volume__categori">Weekle trading volume</p>
             </li>
-            <li class="question__item">
-              <a href="#" class="question__link"><img src="src/components/images/question__telegram.svg" alt="instagram-logo"></a>
-              <p class="question__link-text">Telegram</p>
+            <li class="volume__item">
+              <span class="volume__number">$ 812 993</span>
+              <p class="volume__categori">Day trading volume</p>
             </li>
-            <li class="question__item">
-              <a href="#" class="question__link"><img src="src/components/images/question__viber.svg" alt="instagram-logo"></a>
-              <p class="question__link-text">Viber</p>
+            <li class="volume__item">
+              <span class="volume__number">40 815</span>
+              <p class="volume__categori">Active traders</p>
             </li>
           </ul>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+      <section class="question">
+        <div class="container">
+          <div class="question__inner">
+            <h2 class="question__title">Do you have some questions ?</h2>
+            <p class="question__text">
+              We'll answer you within 10 minutes. We can communicate in
+              diffetent social networks. Сhoose which one is convenient for you.
+              Communication only with real people
+            </p>
+            <ul class="question__list">
+              <li class="question__item">
+                <a href="#" class="question__link"
+                  ><img
+                    src="src/components/images/question__instagram.svg"
+                    alt="instagram-logo"
+                /></a>
+                <p class="question__link-text">Instagram</p>
+              </li>
+              <li class="question__item">
+                <a href="#" class="question__link"
+                  ><img
+                    src="src/components/images/question__telegram.svg"
+                    alt="instagram-logo"
+                /></a>
+                <p class="question__link-text">Telegram</p>
+              </li>
+              <li class="question__item">
+                <a href="#" class="question__link"
+                  ><img
+                    src="src/components/images/question__viber.svg"
+                    alt="instagram-logo"
+                /></a>
+                <p class="question__link-text">Viber</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="container">
         <div class="footer__background">
@@ -122,7 +176,11 @@
             <div class="footer__inner">
               <div class="footer__wrapper">
                 <div class="footer__text">
-                  <img width="100" src="src/components/images/Black.svg" alt="logo" />
+                  <img
+                    width="100"
+                    src="src/components/images/Black.svg"
+                    alt="logo"
+                  />
                   <p class="footer__info-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Perferendis at nihil, pariatur, consectetur similique non

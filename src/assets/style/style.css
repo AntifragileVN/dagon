@@ -192,6 +192,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  /* position: none; */
 }
 
 .hero__title {
@@ -224,6 +225,13 @@ body {
   max-width: 600px;
 }
 
+.hero__form-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-right: 10px;
+}
+
 .hero__form-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -242,7 +250,7 @@ body {
   position: absolute;
   transform: translateY(-50%);
   top: 50%;
-  left: 10%;
+  left: 13%;
   transition: 1ms;
   transition: color 250ms ease-in-out, top 250ms ease-in-out;
 }
