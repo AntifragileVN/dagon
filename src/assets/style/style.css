@@ -407,10 +407,29 @@ body {
 }
 
 .team__text {
-  margin-bottom: 25px;
   font-size: 17px;
+  font-weight: 600;
   line-height: 1.3;
+  margin-bottom: 25px;
+}
+
+.team__text-animation {
   color: #575757;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  background: linear-gradient(to right, white, white 50%, #575757 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 450ms ease-in-out;
+  text-decoration: none;
+}
+
+.team__text-animation--active {
+  background-position: 0% 100%;
 }
 
 .team__contact-button {
@@ -426,7 +445,7 @@ body {
   display: grid;
   grid-template-rows: 100px repeat(3, 200px);
   grid-template-columns: repeat(2, 250px);
-  gap: 30px;
+  gap: 20px;
 }
 
 .team__foto-column--botom {
@@ -434,7 +453,7 @@ body {
   flex-direction: column;
   grid-row: 1 / span 4;
   align-self: flex-end;
-  gap: 30px;
+  gap: 20px;
 }
 
 .team__foto-column--top {
@@ -442,7 +461,7 @@ body {
   flex-direction: column;
   grid-column: 2;
   grid-row: 1 / span 4;
-  gap: 30px;
+  gap: 20px;
 }
 
 .first {
@@ -472,7 +491,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 20px 40px;
+  padding: 15px 40px;
   background: var(--white-color);
   color: var(--bg-color);
   max-height: 370px;
@@ -621,7 +640,7 @@ body {
 
 .footer__info-text {
   max-width: 300px;
-  font-size: 12px;
+  font-size: 14px;
   margin: 0;
 }
 
@@ -641,13 +660,13 @@ body {
 }
 
 .footer__list-link {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .footer__list-title {
   font-family: "Montserrat";
   font-weight: 700;
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 7px;
 }
 
