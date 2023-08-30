@@ -18,7 +18,7 @@ function addObserver(el, option) {
       entry.target.classList.remove("team__text-animation--active");
     });
   }, option);
-
+  
   observer.observe(el);
 }
 
